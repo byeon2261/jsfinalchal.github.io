@@ -1,5 +1,3 @@
-const root = document.querySelector("#root");
-
 const imgs = [
     "1.jpg",
     "2.jpg",
@@ -18,4 +16,4 @@ const chosenImg = imgs[Math.floor(Math.random() * imgs.length)];
 
 // document.body.appendChild(bgImg);
 console.log(chosenImg);
-root.style.backgroundImage = `url(img/${chosenImg})`;
+document.body.style.backgroundImage = `url(img/${chosenImg})`;
