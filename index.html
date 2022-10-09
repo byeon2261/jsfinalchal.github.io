@@ -11,28 +11,40 @@
     <div id="root">
         <main>
             <form id="clock-form">
-                <h2>00:00:00</h2>
-            </form>
-            <form id="login-form">
-                <input type="text" required placeholder="What your name?" />
-                <input type="submit" value="click" />
-            </form>
-            <form>
-    
-            </form>
-            <form id="todo-form">
-                <input type="text" required placeholder="please input to-do and Enter click." />
-            </form>
-            <form id="weather-form">
-    
-            </form>
+                <h1 id="clock">00:00:00</h1>
+            </form>            
+            <div id="greeting-form">
+                <form id="login-form" class="hidden">
+                    <input type="text" required placeholder="What your name?" />
+                    <input type="submit" value="click" />
+                </form>
+                <h1 id="greeting" class="hidden"></h1>  
+            </div>
+            <div id="todo-div">
+                <form id="todo-form">
+                    <input id="todo-input" type="text" required placeholder="please input to-do and Enter click." />
+                </form>
+                <li id="todo-list"></li>    
+            </div>
+            
         </main>
-
-
         <footer>
-
+            <form id="weather-form">
+                <span></span>
+                <span></span>
+            </form>
+            <form id="quote-form">
+                <span></span>
+                <span></span>
+            </form>
+            <span>G.H Byeon</span>
         </footer>
     </div>
-    <img src="img/1.jpg" >
+    <script src="src/js/greeting.js"></script>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/background.js"></script>
+    <script src="src/js/quotes.js"></script>
+    <script src="src/js/todo.js"></script>
+    <script src="src/js/weather.js"></script>
 </body>
 </html>
